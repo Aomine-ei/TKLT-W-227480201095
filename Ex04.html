@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Đăng ký dự thi </title>
+        <meta charset="utf-8">
+        <style>
+            .dau{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+            .dau p{
+                margin: 0 0 0 0;
+            }
+            body{
+                font-family: Verdana, sans-serif;
+            }
+            h1 {
+                font-size: 25px;
+                color: red;
+                text-align: center;
+            }
+            .info{
+                margin-bottom: 40px;
+            }
+            .info{
+                margin: 10%;
+                width: 20%;
+            }
+            .buttons{
+                text-align: center;
+            }
+            .buttons button {
+                padding: 10px 20px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dau">
+            <div>
+                <p><b> TRƯỜNG ĐẠI HỌC BẠC LIÊU </b><br> KỸ THUẬT VÀ CÔNG NGHỆ </p>
+            </div>
+            <div>
+                <p><b> CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM </b>
+                <p align="Center"> Độc lập - Tự do - Hạnh phúc </p>
+            </div>
+        </div>
+        <h1><b> ĐĂNG KÝ XÉT TUYỂN </b></h1>
+        <form method="post" action="">
+            <div class="info">
+                <p>Họ tên: <input type="text" name="hoten" size="40" maxlength="50"></p>
+                <p>Giới tính:
+                    <input type="radio" name="gioitinh" value="1"> Nam
+                    <input type="radio" name="gioitinh" value="0"> Nữ
+                </p>
+                <p>Ngành thi:
+                <ul>
+                    <input type="radio" name="nganh" value="Công nghệ thông tin"> Công nghệ thông tin<br>
+                    <input type="radio" name="nganh" value="Mầm non"> Mầm non<br>
+                    <input type="radio" name="nganh" value="Âm nhạc"> Âm nhạc
+                </ul>
+                </p>
+            </div>
+            <div class="buttons">
+                <button type="submit">Đồng ý</button>
+                <button type="reset">Không đồng ý</button>
+            </div>
+        </form>
+    </body>
+</html>
