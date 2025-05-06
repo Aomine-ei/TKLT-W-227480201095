@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại học Bạc Liêu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        .main-header {
+            background-color: white; 
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: black;
+            float: left;
+            margin: 80px;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 20px auto;
+            background-color: pink;
+            display: flex; /* Để sắp xếp sidebar và main-content */
+            flex-grow: 2; /* Cho phép container mở rộng nếu cần */
+            margin: 0;
+        }
+
+        .sidebar {
+            background-color: gray;
+            border-right: 1px solid #ddd;
+            width: 200px; /* Chiều rộng của sidebar */
+            padding: 10px 0;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar nav > ul > li > a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+            width: 300px; 
+            box-sizing: border-box; 
+            font-size: 20px;
+        }
+
+        .sidebar nav > ul > li:hover {
+            background-color: #ddd;
+        }
+
+        .sidebar nav ul ul {
+            display: none;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar nav ul li:hover > ul {
+            display: block;
+        }
+
+        .sidebar nav ul ul li a {
+            padding: 10px 20px 10px 30px; /* Thụt lề menu con */
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .sidebar nav ul ul li:hover {
+            background-color: #eee;
+        }
+
+        .main-content {
+            padding: 20px;
+            flex-grow: 1; /* Chiếm phần không gian còn lại */
+        }
+
+        .main-content section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+            background-color: #fff;
+            font-size: 20px;
+        }
+
+        .main-content h2 {
+            color: #004d99;
+            margin-top: 0;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .logo img{
+            margin: 0;
+            height: 100%;
+            width: 400px;
+            float: left;
+        }
+        .logo .nhom {
+            margin: 0;
+            height: 100%;
+            width: 175px;
+            float: left;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            margin: 0;
+            font-size: 20px;  
+        }
+
+    </style>
+</head>
+<body>
+    <header class="main-header">
+    </header>
+    <div class="logo">
+        <img src="bum.png" class="nhom">
+        <img src="logo.png">
+        <h1> QUẢN LÝ <br> NHÂN SỰ </h1>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Đơn vị trực thuộc</a>
+                        <ul>
+                            <li><a href="#">Khoa KT & CN</a></li>
+                            <li><a href="#">Khoa Sư phạm</a></li>
+                            <li><a href="#">Khoa NN&TS</a></li>
+                            <li><a href="#">Khoa Kinh tế và Luật</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Hồ sơ nhân viên</a>
+                        <ul>
+                            <li><a href="#">Danh sách</a></li>
+                            <li><a href="#">Xem hồ sơ</a></li>
+                            <li><a href="#">Thêm hồ sơ</a></li>
+                            <li><a href="#">Sửa hồ sơ</a></li>
+                            <li><a href="#">Xóa hồ sơ</a></li>
+                            <li><a href="#">Tìm kiếm</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Quản lý tiền lương</a>
+                        <ul>
+                            <li><a href="#">Bảng lương</a></li>
+                            <li><a href="#">Cập nhật lương</a></li>
+                            <li><a href="#">Tìm kiếm</a></li>
+                            <li><a href="#">Tính lương</a></li>
+                            <li><a href="#">Tính thưởng</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <section class="introduction">
+                <p><b>Tên tiếng Anh: BAC LIEU UNIVERSITY</b></p>
+                <p><b>Tên viết tắt: Tiếng Việt ĐHBL - Tiếng Anh BLU</b></p>
+                <p>Trường ĐHBL (ĐHBL) là trường đại học công lập, cơ sở giáo dục đại học đa ngành, đa hệ, được thành lập theo Quyết định số 1558/QĐ-TTg ngày 24/11/2006 của Thủ tướng Chính phủ. Việc thành lập Trường ĐHBL là phù hợp theo ý chí, nguyện vọng của Đảng bộ và nhân dân tỉnh Bạc Liêu, đáp ứng yêu cầu đào tạo và phát triển nguồn nhân lực chất lượng cao, phục vụ sự nghiệp công nghiệp hóa, hiện đại hóa của Bạc Liêu và vùng Bán đảo Cà Mau.</p>
+                <img src="dhbl.png" alt="Trường Đại học Bạc Liêu" width="400px" height="100%">
+            </section>
+            <section class="training-mission">
+                <h2>II. CHỨC NĂNG NHIỆM VỤ</h2>
+                <p>Về đào tạo: Tổ chức đào tạo đa dạng các trình độ từ sơ đẳng, đại học đến sau đại học và các loại hình liên thông, vừa học vừa làm, liên kết, v.v. nhằm đáp ứng nhu cầu đào tạo ngày càng cao và đa dạng của xã hội, đặc biệt là nguồn nhân lực có chất lượng phục vụ phát triển kinh tế, xã hội (KT-XH) của vùng Bán đảo Cà Mau và khu vực Đồng bằng sông Cửu Long.</p>
+            </section>
+            <section class="scientific-research">
+                <p>Về khoa học công nghệ: Tổ chức nghiên cứu khoa học định hướng ứng dụng, chú trọng giải quyết các vấn đề cấp bách và lâu dài trong phát triển kinh tế xã hội của địa phương và vùng. Tập trung nghiên cứu xã hội đặc biệt quan tâm và thực hiện các dịch vụ khoa học phục vụ cộng đồng.</p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p><b>TRƯỜNG ĐẠI HỌC BẠC LIÊU</b></p>
+        <p><b>Chất lượng - Sáng tạo - Trách nhiệm - Hội nhập</b></p>
+        <p>Điện thoại: 02913822653</p>
+        <p>Email: mail@blu.edu.vn</p>
+        <p>Địa chỉ: Số 178 đường Võ Thị Sáu, P. 8, TP. Bạc Liêu, Tỉnh Bạc Liêu.</p>
+    </footer>
+</body>
+</html>
