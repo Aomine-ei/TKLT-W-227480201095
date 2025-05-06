@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Hoàng Hải - 16DTH3</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url(gt34.jpg);
+    color: #ffffff;
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+}
+
+header {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(0, 55, 255, 0.375);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    animation: neonColorChange 2s infinite alternate;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 20px;
+}
+
+@keyframes neonColorChange {
+    0% {
+        color: #00ff04;
+    }
+    25% {
+        color: #fdfdfd;
+    }
+    50% {
+        color: #ff00ff;
+    }
+    75% {
+        color: #0800ff;
+    }
+    100% {
+        color: #ff0019;
+    }
+}
+
+.back {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+.student-info {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    box-shadow: 0 8px 32px rgba(246, 246, 246, 0.715);
+}
+
+.student-info p {
+    margin: 20px 0;
+    font-size: 25px;
+    color: #ff005d;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chapter {
+    background: rgba(24, 15, 15, 0);
+    border: 2px solid rgb(0, 17, 255);
+    border-radius: 100px;
+    padding: 30px;
+    width: 500px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgb(0, 98, 255);
+}
+        
+.chapter:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.chapter h3 {
+    color: #ff9900;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bai-lam {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bai-lam a {
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(243, 173, 230, 0.671);
+    transition: all 0.3s;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bai-lam a:hover {
+    background: rgba(255, 255, 255, 0.284);
+    transform: scale(1.05);
+    box-shadow: 0 0 100px rgb(0, 255, 255);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .chapter {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Trang Hoàng Hải </h1>
+    </header>
+
+    <div class="student-info">
+        <p>Lớp: 16dth3</p>
+        <p>Mssv: 227480201095</p>
+    </div>
+
+    <div class="main-content">
+        <!-- Chương 2 -->
+        <div class="chapter">
+            <h3>Chương 2</h3>
+            <div class="bai-lam">
+                <a href="chuong2/">Bài tập chương 2</a>
+            </div>
+        </div>
+    
+        <!-- Chương 3 -->
+        <div class="chapter">
+            <h3>Chương 3</h3>
+            <div class="bai-lam">
+                <a href="chuong3/">Bài tập chương 3</a>
+            </div>
+        </div>
+    
+        <!-- Chương 4 -->
+        <div class="chapter">
+            <h3>Chương 4</h3>
+            <div class="bai-lam">
+                <a href="chuong4/">Bài tập chương 4</a>
+            </div>
+        </div>
+        
+        <!-- Chương 5 -->
+        <div class="chapter">
+            <h3>Chương 5</h3>
+            <div class="bai-lam">
+                <a href="chuong5/">Bài tập chương 5</a>
+            </div>
+        </div>
+        
+        <!-- Chương 7 -->
+        <div class="chapter">
+            <h3>Chương 7</h3>
+            <div class="bai-lam">
+                <a href="chuong7/">Bài tập chương 7</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> Bài tập thiết kế & lập trình web. </p>
+    </footer>
+</body>
+</html>
